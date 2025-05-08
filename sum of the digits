@@ -1,0 +1,17 @@
+import java.util.*;
+class m{
+    public static void main(String args[]){
+        Scanner hp=new Scanner(System.in);
+        int n=hp.nextInt();
+        int sum=0;
+        while(n!=0){
+            if(n==0){
+                n=sum;
+                sum=0;
+                }
+                sum+=n%10;
+                n=n/10;
+        }
+        System.out.println(sum);
+    }
+}
